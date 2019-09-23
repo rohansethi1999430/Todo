@@ -22,11 +22,13 @@ export class TodoService {
   }
 
   todoCompleted(index) {
+    console.log(this.todoList);
     this.todoList[index].completed = !this.todoList[index].completed
   }
 
   deleteItem(index) {
-    this.todoList = this.todoList.filter( item => item.id !== index)
+    // this.todoList = this.todoList.filter( item => item.id !== index)
+    this.todoList.splice(index);
   }
 
 }
