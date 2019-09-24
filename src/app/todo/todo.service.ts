@@ -28,7 +28,7 @@ export class TodoService {
 
   deleteItem(index) {
     // this.todoList = this.todoList.filter( item => item.id !== index)
-    this.todoList.splice(index);
+    this.todoList.splice(index,1);
   }
 
 }
